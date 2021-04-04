@@ -19,4 +19,9 @@
     </PackageReference>
   </ItemGroup>
 
+    <ItemGroup>
+        <Compile Update="OperationTests.Data.cs">
+            <DependentUpon>OperationTests.cs</DependentUpon>
+        </Compile>
+    </ItemGroup>
 </Project>
