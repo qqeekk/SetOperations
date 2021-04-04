@@ -2,7 +2,6 @@ Set Operations Test Project
 ===
 
 ## Requirements:  
-
 - One of the supported platforms: 
     - Wndows 7+ (Any CPU)
     - Linux (Arm32 | Arm64 | x64 | x64 Alpine)
@@ -21,5 +20,5 @@ To run tests use the following command:
 
 ```bash
 > cd ./src
-> dotnet test
+> dotnet test -v quiet -l:"console;verbosity=normal" --nologo /p:CollectCoverage=true
 ```
