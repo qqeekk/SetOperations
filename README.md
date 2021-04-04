@@ -20,5 +20,5 @@ To run tests use the following command:
 
 ```bash
 > cd ./src
-> dotnet test -v quiet -l:"console;verbosity=normal" --nologo /p:CollectCoverage=true
+> dotnet test -l:"console;verbosity=normal" /p:CollectCoverage=true
 ```
