@@ -6,7 +6,7 @@ Set Operations Test Project
     - Wndows 7+ (Any CPU)
     - Linux (Arm32 | Arm64 | x64 | x64 Alpine)
     - macOS (x64)
-- .NET Core 3.1 SDK (https://dotnet.microsoft.com/download/dotnet/3.1)
+- Any .NET Core 3.1.x SDK (https://dotnet.microsoft.com/download/dotnet/3.1)
 
 ---    
 Run the following command to ensure that .NET Core 3.1 is installed correctly.
