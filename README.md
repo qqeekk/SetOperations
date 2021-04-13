@@ -1,22 +1,34 @@
 Set Operations Test Project
 ===
 
-## Requirements:  
-- One of the supported platforms: 
+### Вариант 3: Множество.
+
+Протестированы следующие функции:  
+- Сравнение (IsSetEquals)
+- Объединение (GetUnion)
+- Пересечение (GetIntersection)
+- Разность (GetDifference, GetSymmetricDifference)
+- Проверка на включение в данное множество в качестве подмножества (IsProperSubsetOf)
+
+Исходный код тестируемого класса расположен в файле SetOperationExtensions.cs  
+Исходный код тестов расположен в файле SetOperationExtensions.Tests.cs  
+
+## Системные требования:  
+- Одна из поддерживаемых платформ: 
     - Wndows 7+ (Any CPU)
     - Linux (Arm32 | Arm64 | x64 | x64 Alpine)
     - macOS (x64)
-- Any .NET Core 3.1.x SDK (https://dotnet.microsoft.com/download/dotnet/3.1)
+- .NET Core 3.1.x SDK (https://dotnet.microsoft.com/download/dotnet/3.1)
 
 ---    
-Run the following command to ensure that .NET Core 3.1 is installed correctly.
+Выполните следующую комманду чтобы убедиться, что указанные пакеты установленны корректно.
 ```bash
 > dotnet --list-sdks
 ```
 
 ---
-## Instructions
-To run tests use the following command:
+## Инструкции по запуску
+Для запуска тестов выполните:
 
 ```bash
 > cd ./src
