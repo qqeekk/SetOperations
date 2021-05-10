@@ -84,6 +84,12 @@ namespace SetOperations
             => seq as IEnumerable<object> ?? seq.OfType<object>();
 
         private static ISet<object> MakeSet(IEnumerable seq)
-            => MakeGeneric(seq).ToHashSet();
+        {
+            var seq1 = MakeGeneric(seq);
+
+            return seq1 is HashSet<object> set
+                ? new HashSet<object>(set, set.Comparer)
+                : seq1.ToHashSet();
+        }
     }
 }
